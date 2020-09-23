@@ -1,0 +1,46 @@
+.white {color: white}
+.p{margin: 10px}
+.ab{left:10px;}
+.bigbox{width: 700px;height: 700px; margin: auto}
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	float: left;
+	transition-property: all;
+	transition-duration: 1s;
+
+	animation: op;
+	animation-duration: 2s;
+	animation-play-state: paused;
+}
+/*
+.an{transition-property: all;
+	text-decoration: 2s;
+}
+.an:hover{
+	opacity: 0%
+}
+*/
+
+.box:hover{
+	background-color: red;
+	transform:rotate(180deg);
+	animation-play-state: running;
+
+	
+}
+
+
+.p:hover{
+	color: red
+}
+
+@keyframes op{
+	0%{
+		opacity: 1
+	}
+	100%{
+		opacity: 0
+	}
+}
